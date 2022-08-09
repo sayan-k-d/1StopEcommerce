@@ -1,0 +1,939 @@
+* {
+  box-sizing: border-box;
+  font-family: "Secular One", sans-serif;
+}
+nav {
+  margin-right: 15px;
+}
+div.nav-container {
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  padding-right: 5%;
+  background-color: white;
+  z-index: 15;
+  box-shadow: 0px 20px 50px #414141;
+}
+#navMenu .hr-menu {
+  width: 70%;
+  height: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*toggle Buttons*/
+#toggler-btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border: 5px solid white;
+  outline: 2px solid rgb(0, 0, 0);
+}
+#toggler-btn:hover {
+  background-color: #343a40;
+  border: 5px solid orange;
+
+  transition: all 0.5s ease;
+}
+/*nav toggle menu*/
+#navMenu #seperator {
+  background-color: whitesmoke;
+  margin-top: 0px;
+  margin-bottom: 0;
+  height: 5px;
+}
+#navMenu > ul {
+  border-radius: 10px;
+}
+#navMenu ul li {
+  background-color: white;
+}
+#navMenu ul li:last-child {
+  padding-bottom: 15px;
+}
+#navMenu a {
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 4px solid #fff;
+}
+#navMenu a:hover {
+  background-color: black;
+  color: orange;
+  border-bottom: 4px solid #ffa812;
+  transition: all 0.8s ease;
+}
+
+#navMenu a span {
+  font-size: 1.8em;
+}
+#sp1,
+#sp2,
+#sp3,
+#sp4 {
+  margin: 10px;
+  padding: 10px;
+}
+/* Nav ends here */
+
+.jumbotron {
+  background-image: url(../images/CompanyInvestment.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.jumbotron > div {
+  padding-top: 25vh;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron > div h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: "Secular One", sans-serif;
+  color: orange;
+}
+.jumbotron > div > .main-content {
+  overflow: hidden;
+}
+.jumbotron > div p {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.2em;
+
+  color: rgb(0, 0, 0);
+  font-family: "Secular One", sans-serif;
+  text-shadow: 0px 2px 3px rgb(55, 37, 88);
+}
+.jumbotron > div > button {
+  margin: 60px;
+}
+.jumbotron > div > button {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 15px;
+  padding: 15px;
+  color: white;
+  background-color: purple;
+  border: 5px solid rgb(0, 0, 0);
+  font-family: "Secular One", sans-serif;
+  border-radius: 15px;
+}
+.jumbotron > div > button:hover {
+  box-shadow: 5px 5px 50px #414141;
+  color: orange;
+  background-color: black;
+  border-radius: 15px;
+  border: 5px solid orange;
+  transition: all 0.6 s ease;
+}
+/* main content ends here */
+
+#products {
+  margin-top: 100px;
+}
+
+#products .card {
+  margin-top: 100px;
+  height: 700px;
+  width: 450px;
+  border: 5px solid purple;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#products h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+#products .card img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+#products .card-body {
+  width: 100%;
+  text-align: center;
+}
+#products .card-body h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Secular One", sans-serif;
+}
+#products .card-body p {
+  font-size: larger;
+  font-weight: bold;
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-family: "Secular One", sans-serif;
+}
+#products .card-body > a {
+  visibility: hidden;
+  text-decoration: none;
+  opacity: 0;
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+  background-color: black;
+  border-radius: 15px;
+  padding: 15px;
+  border-bottom: 5px solid orange;
+  text-align: center;
+  font-size: 1.2em;
+  color: orange;
+  font-family: "Secular One", sans-serif;
+}
+
+#products .card:hover .card-body > a {
+  box-shadow: 0px 10px 10px #414141;
+  opacity: 1;
+  visibility: visible;
+}
+#products .card:hover {
+  box-shadow: 10px 10px 10px #414141;
+  transition: all 0.5s ease;
+}
+#products .more-products {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+}
+#products .more-products a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 15px;
+  background-color: black;
+  color: orange;
+  border-radius: 15px;
+  font-family: "Secular One", sans-serif;
+  border: 5px solid orange;
+}
+#products .more-products a:hover {
+  box-shadow: 10px 10px 10px #414141;
+  transition: all 0.3s ease;
+}
+/* products ends here */
+.row {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#key-points {
+  margin-top: 100px;
+}
+#key-points h2 {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+#key-points .key-content {
+  margin-left: 5%;
+}
+#key-points .alert {
+  padding: 5px;
+  list-style: none;
+  float: left;
+  border-left: 2px solid orange;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "Secular One", sans-serif;
+  text-align: left;
+  box-shadow: 0px 3px 15px #706f6f60;
+}
+
+#key-points .key-image {
+  width: 100%;
+  float: right;
+  margin-left: 100px;
+}
+#key-points .key-image img {
+  width: 100%;
+}
+/* key points ends here */
+#clients {
+  margin-top: 100px;
+  padding: 50px;
+}
+
+#clients h2 {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+#clients .client-crou {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 3% 0%;
+}
+#clients .client-crou .carousel {
+  height: 45vh;
+}
+#clients .client-crou .carousel-inner .carousel-item {
+  background-image: linear-gradient(
+    to right,
+    rgba(144, 141, 141, 0.5),
+    white,
+    rgba(144, 141, 141, 0.5)
+  );
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  box-shadow: none;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  height: 45vh;
+}
+#clients .client-crou .carousel-inner .carousel-item .item-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+#clients .client-crou .carousel-inner .carousel-item .item-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+#clients .client-crou .carousel-item .carousel-caption {
+  position: absolute;
+  color: black;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+#clients .client-crou .carousel-item .carousel-caption h5 {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Secular One", sans-serif;
+}
+
+#clients .client-crou .carousel-item .carousel-caption p {
+  font-size: larger;
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-family: "Secular One", sans-serif;
+}
+
+#clients .client-crou .slide .carousel-indicators {
+  z-index: 10;
+}
+
+#clients .client-crou .slide .carousel-indicators li {
+  background-color: black;
+}
+/* crousel ends here */
+#team h2 {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+#team video {
+  margin: 5%;
+  float: left;
+  border: 10px solid orange;
+  width: 100%;
+  outline: none;
+}
+
+#team p {
+  font-size: 1.2em;
+  margin: 5%;
+  font-family: "Secular One", sans-serif;
+}
+/* team ends here */
+#review-form {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 50px;
+  background-image: linear-gradient(
+    to bottom right,
+    #821bd2,
+    #bc1bd2,
+    #d21ba0,
+    #d21b6e,
+    #d21b6e
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#review-form h2 {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+#review-form button {
+  margin-top: 16px;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  height: 48px;
+  position: relative;
+  outline: none;
+  z-index: 9;
+  font-family: "Secular One", sans-serif;
+  font-size: larger;
+}
+
+#review-form button .btn-helper {
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    #1bd29b,
+    #1bd2c7,
+    #1bbfd2,
+    #1ba0d2,
+    #1b76d2
+  );
+
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+#review-form button:hover .btn-helper {
+  opacity: 1;
+}
+/* form ends here */
+footer {
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px;
+}
+footer .logo {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+footer .logo img {
+  width: 300px;
+}
+footer .pages,
+.docs,
+.social {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+footer h3 {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Secular One", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+footer .pages li,
+.docs li,
+.social li {
+  list-style: none;
+  margin: 20px;
+}
+
+footer .pages li a,
+.docs li a,
+.social li a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.3em;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px 0px #706f6f60;
+}
+
+footer .pages a:hover,
+.docs a:hover {
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px 0px #706f6ffb;
+  transition: all 0.5s ease;
+}
+footer .social a {
+  font-size: 2em;
+}
+footer .social a:hover {
+  box-shadow: 0px 10px 10px #706f6ffb;
+  transition: all 0.5s ease;
+}
+footer hr {
+  margin: 50px;
+}
+footer .copyrt {
+  width: 100%;
+  text-align: center;
+  font-size: large;
+}
+
+/*------------------------------------------About Us Page ------------------------------------------*/
+#about-us {
+  padding: 100px;
+}
+
+#about-us h2 {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+#about-us p {
+  font-size: 1.2em;
+  margin: 5%;
+  font-family: "Secular One", sans-serif;
+  text-align: justify;
+}
+
+/*---------------------- Contact Us Page ------------------------*/
+#contact-us {
+  margin-top: 100px;
+  padding: 100px;
+}
+#contact-us h2 {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+#contact-us .card {
+  background-image: linear-gradient(
+    to right,
+    #821bd2,
+    #bc1bd2,
+    #d21ba0,
+    #d21b6e,
+    #d21b6e
+  );
+}
+#contact-us .card ul li p {
+  font-size: 1.3em;
+  margin: 0.6rem;
+  text-align: justify;
+}
+#contact-us .card ul li p b {
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+}
+#contact-us iframe {
+  width: 30rem;
+  height: 400px;
+  border: 5px solid orange;
+}
+#contact-us iframe:hover {
+  box-shadow: 10px 10px 20px #706f6ffb;
+  transition: all 0.5s ease;
+}
+
+/*-------------- Services Page ----------------------*/
+#service-product h2 {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+/*--------------------- Blogs Page ----------------------*/
+#our-blogs {
+  margin-top: 100px;
+}
+#our-blogs #blogs h2 {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+#our-blogs #blogs .card {
+  margin-top: 100px;
+  height: 600px;
+  border: 5px solid purple;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#our-blogs #blogs .card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+#our-blogs #blogs .card .card-body {
+  width: 100%;
+  text-align: center;
+}
+#our-blogs #blogs .card .card-body h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Secular One", sans-serif;
+}
+#our-blogs #blogs .card .card-body p {
+  font-size: larger;
+  font-weight: bold;
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-family: "Secular One", sans-serif;
+}
+#our-blogs #blogs .card .card-body a {
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1.2em;
+  color: orange;
+  backdrop-filter: blur(5px);
+  font-family: "Secular One", sans-serif;
+}
+#our-blogs #blogs .card .card-body a:hover {
+  box-shadow: 0px 10px 10px #414141;
+  transition: all 0.5s ease;
+}
+/*-----------Login Page ------------------*/
+.login-body {
+  background-color: #161623;
+}
+.login-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at right 70%);
+  z-index: -1;
+}
+.login-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(30% at 10% 10%);
+  z-index: -1;
+}
+.login-container {
+  margin-top: 100px;
+  z-index: 1;
+  position: relative;
+}
+.login-container h2 {
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  color: orange;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+.login-container .card {
+  position: relative;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.login-container .card .login-content {
+  width: 50%;
+  transition: 0.5s;
+}
+.login-container .card .login-content form label {
+  font-family: "Secular One", sans-serif;
+  color: #fff;
+  font-size: 1.8em;
+}
+.login-container .card .login-content form button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+}
+.login-container .card .login-content form a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+}
+
+/*--------------Register Page -------------------*/
+.register-container {
+  margin-top: 100px;
+  z-index: 1;
+  position: relative;
+}
+.register-container h2 {
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  color: orange;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+
+.register-container .card {
+  position: relative;
+  height: 550px;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.register-container .card .register-content {
+  width: 50%;
+  transition: 0.5s;
+}
+.register-container .card .register-content form label {
+  font-family: "Secular One", sans-serif;
+  color: #fff;
+  font-size: 1.8em;
+}
+
+.register-container .card .register-content form a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: "Secular One", sans-serif;
+}
+
+/*###################all media queries starts here################*/
+
+/*Media Query for 1250px Devices*/
+@media (max-width: 1250px) {
+  #navMenu a span {
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+}
+/*Media Query for 1199px Devices*/
+@media (max-width: 1199px) {
+  #team .team-content p {
+    font-size: 1rem;
+  }
+  #contact-us iframe {
+    width: 25rem;
+    height: 300px;
+    border: 5px solid orange;
+  }
+}
+
+/*Media Query for 1050px Devices*/
+@media (max-width: 1050px) {
+  #navMenu a span {
+    font-size: 1.2rem;
+    padding: 3px;
+  }
+}
+
+/*Media Query for 991px Devices*/
+@media (max-width: 991px) {
+  footer .pages li a,
+  .docs li a,
+  .social li a {
+    box-shadow: none;
+  }
+  #team .team-content section {
+    height: 500px;
+    overflow-y: auto;
+  }
+  .jumbotron > div > h2 {
+    font-size: 35px;
+  }
+  .jumbotron > div > p {
+    font-size: 1em;
+  }
+  .jumbotron > div > button {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  footer .pages li,
+  .docs li,
+  .social li {
+    list-style: none;
+    margin: 10px;
+  }
+  #contact-us iframe {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    border: 5px solid orange;
+  }
+}
+/*Media Query for 830px Devices*/
+@media (max-width: 830px) {
+}
+
+/* Media Query for 767px Devices */
+@media (max-width: 767px) {
+  #team video {
+    margin: 5%;
+    border: 10px solid orange;
+    width: 90%;
+    outline: none;
+  }
+  #team p {
+    font-size: 1.2em;
+    margin: 5%;
+    font-family: "Secular One", sans-serif;
+  }
+
+  #about-us p {
+    font-size: 1em;
+    margin: 2%;
+    font-family: "Secular One", sans-serif;
+    text-align: justify;
+  }
+}
+
+/*Media Query for 680px Devices*/
+@media (max-width: 680px) {
+  .jumbotron {
+    overflow-y: scroll;
+  }
+  #contact-us .card {
+    width: 340px;
+  }
+  #contact-us .card ul {
+    width: 300px;
+  }
+  #contact-us .card ul li p {
+    font-size: 1rem;
+    margin: 0.3rem;
+    text-align: justify;
+  }
+}
+
+/*Media Query for 450px Devices*/
+@media (max-width: 450px) {
+  #our-blogs #blogs .card {
+    height: auto;
+  }
+}
+/*Media Query for 400px Devices*/
+@media (max-width: 400px) {
+  #home-logo-img > img {
+    height: 70px;
+    width: 200px;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+  #contact-us .card {
+    width: 250px;
+  }
+  #contact-us .card ul {
+    width: 210px;
+  }
+  #contact-us .card ul li p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+}
