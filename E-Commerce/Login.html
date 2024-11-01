@@ -93,7 +93,7 @@
       <h2>Login</h2>
       <div class="card">
         <div class="login-content">
-          <form>
+          <form onsubmit="handleSubmit(event)">
             <div class="form-group">
               <label for="exampleInputEmail1">Email</label>
               <input
@@ -113,6 +113,7 @@
                 class="form-control"
                 id="exampleInputPassword1"
               />
+              <small id="error" class="form-text text-danger"></small>
             </div>
             <button type="submit">Submit</button>
             <a href="register.html" type="submit">Register</a>
@@ -130,5 +131,18 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        var email = document.getElementById("exampleInputEmail1").value;
+        var password = document.getElementById("exampleInputPassword1").value;
+        if (email === "" || password === "") {
+          document.getElementById("error").innerHTML =
+            "All fields are required.";
+        } else {
+          window.open("about.html");
+        }
+      }
+    </script>
   </body>
 </html>
